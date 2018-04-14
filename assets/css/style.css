@@ -1,0 +1,113 @@
+.jumbotron {
+    
+
+    background-color: beige !important;
+}
+.displayxui {
+   
+    font-family: 'Dokdo', cursive;
+    
+    padding: 40px;
+    margin: 0 auto;
+    align-items: center;
+     
+}
+.lead {
+    font-family: 'Dokdo', cursive;
+    color: green;
+    font-size: 13em;
+
+}
+ p {
+    font-family: 'Dokdo', cursive;
+    color: green;
+    font-size: 3em;
+}
+ body {
+    
+    background-image:url(../images/tileable_wood_texture.png);
+    bottom: 170px;
+    margin: 70px;
+}
+.one {
+    background-image:url(../images/calcite.png);
+    width: 80px;
+    height: 80px;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+}
+.two {
+    background-image:url(../images/carnelian.png);
+    width: 80px;
+    height: 80px;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+}
+
+.three {
+    background-image:url(../images/blueQuartz.png);
+    width: 80px;
+    height: 80px;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+}
+.four {
+    background-image:url(../images/brazilianAgate.png);
+    width: 80px;
+    height: 80px;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+}
+.row22 {
+    margin: 0 auto;
+}
+ .rambo {
+     background-color: gold;
+ }
+ footer {
+    
+    background-color: #bce988e3;
+    clear: both;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    height: 66px;
+    border-top: 8px solid #dbf8f7;
+    overflow: hidden;
+    
+}
+.bottom-fix-70 {
+    margin-bottom: 170px;
+    
+}
+.col-md-2 {
+    background-color: rgba(255, 220, 21, 0.556);
+}
+.gameNumber {
+    height: 140px;
+    background-color: rgba(255, 220, 21, 0.556);
+    padding: 10px;
+}
+.scoreboard-text {
+    clear: both;
+    background-color: rgba(255, 220, 21, 0.556);
+    padding: 20px;
+    margin: 20px;
+    margin-left: 0px;
+    width: 35%;
+    font-family: 'Dokdo', cursive;
+    font-size: 2em;
+}
+.scoreboard {
+    height: 140px;
+    background-color: rgba(255, 220, 21, 0.556);
+    padding: 10px;
+    margin: 20px;
+    margin-left: 0px;
+    width: 35%;
+}
