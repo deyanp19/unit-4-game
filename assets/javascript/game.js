@@ -1,19 +1,58 @@
-// Create a variable to hold a random number between 1 and 10
-var randomNum = Math.floor((Math.random() * 10) + 1);
-
-// Create a variable called el to hold the element whose id attribute has a value of info
-var el = document.getElementsById('gameNumber');
-// Write the number into that element
-el.innerHTML = '<h2>random number</h2><p>' + randomNum + '</p>';
-
+// In this project will load the game by getting the DOM element "document" loaded with the use of ready method and the use of immediately executing the code inside the property of the method "ready". This is achieved by wrapping it in ().
 $(document).ready(function() {
 
-    // Here we use jQuery to select the header with "click-me" as its ID.
-    // Notice I have the click, #click-me, and then the function
-    // So action, id|class|element, function
-    // And so whenever it is clicked...
-    $("body").on("click", "div.gameNumber", function() {
-      alert("I've been clicked!");
-    });
+  /*Plan:
+1.Create variables that will store the numbers that need to be displayed: score of the player, the random number, the wins and loses points
+2.Create function that randomizes a number produced by clicking on a crystal
+3.Create function that randomizes a number loaded at the begining of the game
+4. Function that resets the game
+5. Function that updates the page when throughout the game.
+5.1. Needs to keep the score and display the win/loose alert
+6. Funciton that will keep track of the guessed number by the player
+7. Read the onclick events useing jQuery and control the wins logic
+  */
 
-  });
+//1.
+
+var sumCrystals = 0;
+var randomNum = randomNumGenerated();
+var win = 0;
+var losses = 0;
+var crystals;
+
+//2.
+function randomNumAllCrystals() {
+  // this func will simply return and stop exexution
+  return {
+    // all the crystals are as objects and will generate points corresponding
+    yellow: {
+      points: Math.floor(Math.random() * 12) + 1
+    },
+    red: {
+      points: Math.floor(Math.random() * 12) + 1
+    },
+    blue: {
+      points: Math.floor(Math.random() * 12) + 1
+    },
+    brown: {
+      points: Math.floor(Math.random() * 12) + 1
+    }
+  }//return ends
+}// randomNumAllCrystals ends
+
+//3. 
+function randomNumGenerated() {
+  return Math.floor(Math.random() * 102 +19);
+}
+
+//4.
+function resetGame() {
+  sumCrystals = 0;
+  crystals = randomNumAllCrystals() // executing the function that gets random number to all crystals
+  randomNum = randomNumGenerated(); // executing the function ln 44
+  // printing to the page the fandom number
+  $("#gameGoal").text(randomNum);
+}
+
+
+  });// loading the doc ready ends

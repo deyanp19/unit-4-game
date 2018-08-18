@@ -18,7 +18,7 @@ When the random number that was generated at the begining of the game happen to 
 ### Bootstrap-Tweeter framework
 
 
-
+#### Example code
 ```
 if (score === goal){
         alert("You win!");
