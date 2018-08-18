@@ -12,10 +12,10 @@ When the random number that was generated at the begining of the game happen to 
 
 ## Technologies used
 
-###jQuery
-###CSS, HTML
-###JavaScript
-###Bootstrap-Tweeter framework
+### jQuery
+### CSS, HTML
+### JavaScript
+### Bootstrap-Tweeter framework
 
 
 
