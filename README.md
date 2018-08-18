@@ -31,7 +31,8 @@ if (score === goal){
 ```
 
 ### Installing
-
+Sipmly launch the index.html 
+Kepp the folder structure as original. There are relative links that need the files referencing to them.
 
 ## License
 
