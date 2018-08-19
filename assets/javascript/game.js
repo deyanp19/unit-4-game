@@ -6,7 +6,7 @@ $(document).ready(function() {
 2.Create function that randomizes a number produced by clicking on a crystal
 3.Create function that randomizes a number loaded at the begining of the game
 4. Function that resets the game
-5. Function that updates the page when throughout the game.
+5. Function that updates the page  throughout the game.
 5.1. Needs to keep the score and display the win/loose alert
 6. Funciton that will keep track of the guessed number by the player
 7. Read the onclick events useing jQuery and control the wins logic
@@ -52,6 +52,21 @@ function resetGame() {
   randomNum = randomNumGenerated(); // executing the function ln 44
   // printing to the page the fandom number
   $("#gameGoal").text(randomNum);
+}
+//5.
+function updatePage(didPlayerWin) {
+  $("playerWinScore").empty();
+  // checking for win
+  if (didPlayerWin === true) {
+    alert("You win!");
+    resetGame();// resets the game because it is done
+    renderMatchingNumber();
+  }
+  else if (didPlayerWin === false) {
+    alert("You lost!");
+    resetGame();
+    renderMatchingNumber();
+  }
 }
 
 
