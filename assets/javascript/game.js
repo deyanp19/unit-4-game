@@ -69,5 +69,26 @@ function updatePage(didPlayerWin) {
   }
 }
 
+//6.
+function renderMatchingNumber() {
+  var scoreNumDiv = $("<div id='score-number'>").text(sumCrystals);
+  $("#yourScore").html();
+  $("#yourScore").html(scoreNumDiv);
+}
+
+//7.
+$(".one").on("click", function(event) {
+renderMatchingNumber();
+if (sumCrystals === randomNum) {
+  wins++;
+  resetGame();
+  updatePage(true);
+} 
+else if (sumCrystals > randomNum) {
+  losses++;
+  resetGame();
+  updatePage(false);
+}
+});
 
   });// loading the doc ready ends
