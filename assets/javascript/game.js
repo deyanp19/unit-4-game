@@ -44,7 +44,7 @@ function randomNumAllCrystals() {
 function randomNumGenerated() {
   return Math.floor(Math.random() * 102 +19);
 }
-
+console.log(randomNumGenerated);
 //4.
 function resetGame() {
   sumCrystals = 0;
@@ -89,6 +89,7 @@ else if (sumCrystals > randomNum) {
   resetGame();
   updatePage(false);
 }
+console.log(losses);
 });
 
   });// loading the doc ready ends
